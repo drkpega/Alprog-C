@@ -1,0 +1,32 @@
+import javax.swing.JOptionPane;
+
+public class JavaLibs5026211027{
+	public static void main(String[] Args){
+		String nama, email, mknfav, minum, binatang, kegiatan, pergi;
+		int angka, duduk;
+		double desimal;
+
+	JOptionPane.showMessageDialog(null, "=+=+= PROGRAM PERENCANAAN WEEKEND =+=+=");
+	JOptionPane.showMessageDialog(null, "Untuk membuat perencanaan, anda diharuskan menjawab semua pertanyaan yang ada!!");
+
+	nama = JOptionPane.showInputDialog(null, "Siapa Nama Anda?");
+	email = JOptionPane.showInputDialog(null, "Email Anda?");
+	mknfav = JOptionPane.showInputDialog(null, nama+ " suka makan ___");
+	minum = JOptionPane.showInputDialog(null, nama+ " suka minum ___");
+	angka = Integer.parseInt(JOptionPane.showInputDialog(null, "bilangan bulat favorit " +nama+ " adalah: "));
+	desimal = Double.parseDouble(JOptionPane.showInputDialog(null, "antara diatara 0-1, " +nama+ " suka bilangan desimal yang mana?"));
+	binatang = JOptionPane.showInputDialog(null, "Binatang favorit "+nama+ " adalah: ");
+	kegiatan = JOptionPane.showInputDialog(null, "Kegiatan yang biasanya kamu lakukan "); 
+	duduk = Integer.parseInt(JOptionPane.showInputDialog(null, "Jika harus duduk diam, berapa lama anda bisa melakukannya? (dalam menit)\n(input dalam bentuk bilangan bulat)"));
+	pergi = JOptionPane.showInputDialog(null, "Jika kekasih kamu mengajakmu pergi, kamu ingin pergi kemana?");
+
+	double relax = (duduk*desimal)/2.5;
+	int jalan	 = (duduk*angka+10)*60;
+
+	JOptionPane.showMessageDialog(null, "Terima kasih telah menjawab semua pertanyaan!!");
+	JOptionPane.showMessageDialog(null, "Rencana yang cocok untuk anda telah kamu buat!");
+	
+	JOptionPane.showMessageDialog(null, "Hai, "+nama+"!! apa kabar? \nIni adalah rencana yang cocok untuk kamu lakukan pada weekend nanti.");
+	JOptionPane.showMessageDialog(null, "1. Pergi bersama pasangan atau teman ke " +pergi+ "\n2. Menikmati hidangan kombinasi " +mknfav+ " dan " +minum+ "\n3. Menghabiskan waktu dengan jalan-jalan dengan "+binatang+" atau hanya sekedar bermain\n4. mengoptimalkan kegiatan dengan mengurangi " +kegiatan+ " atau menggantinya dengan kegiatan yang lebih produktif\n5. Berolahraga pagi atau sore setidaknya " +jalan+ " menit\n6. Membaca buku pengetahuan atau 'Self Improvement' setidaknya "+relax+ " dari waktu bersantai");                
+	}
+}
