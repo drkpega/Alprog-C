@@ -1,0 +1,18 @@
+import java.util.Random;
+
+public class ComputeMethods5026211027{
+	
+	public static double fToc(double degreesF){	
+		double f = (degreesF-32)*5/9;
+		return f;
+	}
+	public static double hypotenuse(int a, int b){
+		return Math.sqrt(Math.pow(a,2)+ Math.pow(b,2));
+	}
+	public static int roll (){
+		Random dice = new Random();
+		int randomnum = dice.nextInt(6)+1;
+		return randomnum;
+
+	}
+}
