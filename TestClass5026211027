@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class TestClass5026211027{
+
+	public static void main(String[] Args){	
+
+	Scanner input = new Scanner(System.in);
+	ComputeMethods5026211027 count = new ComputeMethods5026211027();
+	
+	System.out.println("Masukan nilai suhu pada satuan Fahrenheit!");
+	double degreesF = input.nextDouble();
+	System.out.println("Masukan nilai sisi tegak segitiga siku-siku");
+	int sisi = input.nextInt();
+	System.out.println("Masukan nilai alas segitiga siku-siku");
+	int alas = input.nextInt();
+	System.out.println("Throw the dice!");
+
+	double suhu = count.fToc(degreesF);
+	System.out.println("Temp in Celsius is " + suhu);
+	
+	double hypoten = count.hypotenuse(sisi, alas);
+	System.out.println("Hypotenuse is " + hypoten);
+
+	int dice1 = count.roll();
+	int dice2 = count.roll();
+	int sumdice = dice1+dice2;	
+	System.out.println("The sum of the dice values is " + sumdice);	
+	}
+	
+}
