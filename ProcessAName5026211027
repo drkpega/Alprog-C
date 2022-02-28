@@ -1,0 +1,15 @@
+import java.lang.String;
+import java.util.*;
+
+public class ProcessAName5026211027{
+    public static void main(String[] Args){
+	Scanner input = new Scanner(System.in);
+	System.out.print("Type Your Name: ");
+	String nama = input.nextLine();
+	
+	String[] pisah = nama.split(" ");
+	String belakang = pisah[1];
+
+	System.out.println("Your name is: " +belakang+ ", " +nama.charAt(0)+".");        
+    }
+}
